@@ -4,6 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "build-pug": "pug src --out dist --pretty",
+    "build-sass": "node-sass src/sass --output dist/css",
+    "build": "yarn run build-pug && yarn run build-sass",
     "watch-pug": "pug src --out dist --pretty --watch",
     "watch-sass": "node-sass src/sass --output dist/css --watch",
     "watch": "concurrently \"yarn run watch-pug\" \"yarn run watch-sass\""
