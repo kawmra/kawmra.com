@@ -1,0 +1,17 @@
+{
+  "name": "kawmra.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "watch-pug": "pug src --out dist --pretty --watch",
+    "watch-sass": "node-sass src/sass --output dist/css --watch",
+    "watch": "concurrently \"yarn run watch-pug\" \"yarn run watch-sass\""
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "node-sass": "^4.7.2",
+    "pug": "^2.0.1",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}

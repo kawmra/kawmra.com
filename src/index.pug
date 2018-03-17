@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    link(rel="stylesheet", href="./css/index.css")
+  body
+    section.profile
+      header
+        img(src="https://secure.gravatar.com/avatar/b75e98eb0eedf53257f542eaa3bd70dd?s=400" alt="thumbnail")
+        .name
+          h1 @kawmra
+          p Masashi Kawamura
+        .bio
+          p
+            | Love: Android, Kotlin, JavaScript, and creating
+            br
+            | interesting app, service, and any kind of thing.
+      ul.sns
+        include sns_item
+        li: a.github(href="https://github.com/kawmra" target="_blacnk") GitHub
+        li: a.twitter(href="https://twitter.com/kawmra" target="_blank") Twitter
+        li: a.qiita(href="https://qiita.com/kawmra" target="_blank") Qiita
+        li: a.blog(href="http://kawmra.hatenablog.com/" target="_blank") Blog

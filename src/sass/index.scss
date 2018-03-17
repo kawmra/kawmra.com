@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+html {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #222;
+    font-family: 'Noto Sans', sans-serif;    
+    background: #fbfdff;
+}
+
+.profile {
+    margin-top: -5%;
+    text-align: center;
+
+    header {
+        img {
+            $size: 200px;
+            border-radius: 8%;
+            width: $size;
+            height: $size;
+        }
+        
+        .name {
+            margin: 1em 0;
+
+            h1 {
+                margin: 0;
+            }
+
+            p {
+                font-size: 14px;
+                color: #888;
+                margin: 0.2em 0 0 0;
+            }
+        }
+    }
+    
+    ul.sns {
+        display: flex;
+        color: black;
+        padding: 0;
+        justify-content: center;
+    
+        li {
+            list-style: none;
+            margin-right: 8px;
+    
+            &:last-child {
+                margin-right: 0;
+            }
+
+            p {
+                margin: 0;
+            }
+
+            a {
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 0.8rem;
+
+                &.github { color: #24292e; }
+                &.twitter { color: #48AAE6; }
+                &.qiita { color: #55c500; }
+                &.blog { color: #3d3f44; }
+                &.mail { color: #4285f4; }
+            }
+
+            img {
+                $space: 0.2em;
+                vertical-align: middle;
+                width: 1em + $space;
+                height: 1em + $space;
+                margin: 0 $space*2 $space $space;
+            }
+        }
+    }
+}
