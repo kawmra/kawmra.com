@@ -4,9 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "clean": "rm -rf dist/",
+    "update-image": "curl \"https://secure.gravatar.com/avatar/b75e98eb0eedf53257f542eaa3bd70dd?s=400\" > dist/profile.png",
     "build-pug": "pug src --out dist --pretty",
     "build-sass": "node-sass src/sass --output dist/css",
-    "build": "yarn run build-pug && yarn run build-sass",
+    "build": "yarn run clean && yarn run build-pug && yarn run build-sass && yarn run update-image",
     "watch-pug": "pug src --out dist --pretty --watch",
     "watch-sass": "node-sass src/sass --output dist/css --watch",
     "watch": "concurrently \"yarn run watch-pug\" \"yarn run watch-sass\""
