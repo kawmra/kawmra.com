@@ -17,6 +17,10 @@ body {
     background: #fbfdff;
 }
 
+h1, p {
+    margin: 0;
+}
+
 .profile {
     margin-top: -5%;
     text-align: center;
@@ -32,15 +36,15 @@ body {
         .name {
             margin: 1em 0;
 
-            h1 {
-                margin: 0;
-            }
-
             p {
                 font-size: 14px;
                 color: #888;
                 margin: 0.2em 0 0 0;
             }
+        }
+
+        .bio {
+            margin: 1em 0;
         }
     }
     
@@ -52,20 +56,15 @@ body {
     
         li {
             list-style: none;
-            margin-right: 8px;
+            margin-right: 16px;
     
             &:last-child {
                 margin-right: 0;
             }
 
-            p {
-                margin: 0;
-            }
-
             a {
                 text-decoration: none;
                 font-weight: bold;
-                font-size: 0.8rem;
 
                 &.github { color: #24292e; }
                 &.twitter { color: #48AAE6; }
